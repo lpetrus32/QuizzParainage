@@ -1,0 +1,100 @@
+html, body ,header,footer, #main{
+    margin: 0;
+  }
+  
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    overflow: hidden; /* force l'encapsulation du contenu dans le body et cache les barres de défilement*/
+    height: inherit;
+    background-color: rgb(46, 46, 117);
+}
+
+header{
+    background-color: rgb(27, 27, 73);
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 10%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+    background-color: rgb(156, 156, 156);
+    color: rgb(66, 66, 66);
+}
+
+#textHead{
+    margin: 0px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    vertical-align: middle;
+}
+
+#textFoot{
+    margin: 0px;
+    text-align: center;
+    font-style: italic;
+}
+
+#Q{
+    position: absolute;
+    top:10%;
+    width:100%;
+    height: 15%;
+    text-align: center;
+    color: white;
+}
+
+.quizzBut {
+    height: 29.5%;
+    width: 37.5%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(43, 153, 47);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+  
+.quizzBut:hover {
+    background-color: #3e8e41;
+    border:  2px solid white;
+}
+  
+.quizzBut:active {
+    background-color: rgb(43, 153, 47);
+    box-shadow: 0 0px #666;
+    transform: translateY(4px);
+}
+
+#B1{
+    position: absolute;
+    top:30%;
+    left: 10%;
+}
+#B2{
+    position: absolute;
+    top:30%;
+    right : 10%;
+}
+#B3{
+    position: absolute;
+    top : 62.5%;
+    left: 10%;
+}
+#B4{    
+    position: absolute;
+    top : 62.5%;
+    right: 10%;
+}
