@@ -13,12 +13,35 @@
         <p id="textHead">QUIZZ PARAINAGE</p>
         <img src="" alt="">
     </header>
-    <h1 id="Q"> Question</h1>
 
-    <button class="quizzBut" id="B1">1</button>
-    <button class="quizzBut" id="B2">2</button>
-    <button class="quizzBut" id="B3">3</button>
-    <button class="quizzBut" id="B4">4</button>
+    
+
+    <div id="page0">
+      <p>Bienvenue sur le Quizz de Parainage du Master Bioinformatique de Bordeaux</p><br>
+      <p>Que tu sois M1 ou M2 ce test nous permettra de vous attribuer un.e parain/maraine ou un.e filleul.le.</p>
+      <p>Faire ce quizz ne vous prendra que 5 minutes alors répondez honnetemment et si vous rencontrez un problème contactez un membre de l'asso.</p><br>
+      <p>PS : Attention, pas de retour en arrière possible ;)</p>
+      <p>La bise !</p><br>
+      <button type="button" class="button" onclick="next()">Commencer</button>
+    </div>   
+
+    <h1 id="Q">Question préliminaire, tu es en ...</h1>
+
+    <button class="quizzBut" id="B1" value="1" onclick="next(1)">Première année - M1</button>
+    <button class="quizzBut" id="B2" value="2" onclick="next(2)">Deuxième année - M2</button>
+    <button class="quizzBut" id="B3" value="3" onclick="next(3)">Je suis en réorientation</button>
+    <button class="quizzBut" id="B4" value="4" onclick="next(4)">Je suis en reprise d'études</button>
+
+    <div id="form">
+      <form>
+        <fieldset>
+          <legend>Nom Prénom</legend>
+          <input type="text" id="name" name="name" maxlength="100">
+          <p id="error" style="color: red; font-style: italic;"></p>
+        </fieldset>
+      </form>
+      <button type="button" class="button" id="valider" onclick="next()">Valider</button>
+    </div>
 
     <footer><p id="textFoot">Par l'AMBB pour le master de Bioinformatique de Bordeaux</p></footer>
     <script src="index.js"></script>
