@@ -44,18 +44,7 @@ footer{
     font-style: italic;
 }
 
-#Q{
-    position: absolute;
-    top:10%;
-    width:100%;
-    height: 15%;
-    text-align: center;
-    color: white;
-}
-
 .quizzBut {
-    height: 29.5%;
-    width: 37.5%;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -65,36 +54,128 @@ footer{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-}
-  
-.quizzBut:hover {
-    background-color: #3e8e41;
-    border:  2px solid white;
+    font-size: xx-large;
 }
   
 .quizzBut:active {
-    background-color: rgb(43, 153, 47);
+    background-color: #3e8e41;
     box-shadow: 0 0px #666;
+    border:  5px solid white;
     transform: translateY(4px);
 }
 
+.button{
+	width:80%;
+    height:15%;
+    font-size: xx-large;
+	background-color: #3e8e41;
+	font-weight: bold;
+	border: 3px solid white;
+    color:#fff;
+    margin-bottom: 1%;
+}
+
+#page0{
+    overflow: auto;
+    position : absolute;
+    top:10%;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    visibility: visible;
+
+}
+
+#Q{
+    position: absolute;
+    top:10%;
+    width:100%;
+    height: 15%;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+}
+
 #B1{
+    height: 62%;
+    width: 45.5%;
     position: absolute;
     top:30%;
-    left: 10%;
+    left: 3%;
+    visibility: hidden;
 }
 #B2{
+    height: 62%;
+    width: 45.5%;
     position: absolute;
     top:30%;
-    right : 10%;
+    right : 3%;
+    visibility: hidden;
 }
 #B3{
+    height: 29.5%;
+    width: 45.5%;
     position: absolute;
     top : 62.5%;
-    left: 10%;
+    left: 3%;
+    visibility: hidden;
 }
 #B4{    
+    height: 29.5%;
+    width: 45.5%;
     position: absolute;
     top : 62.5%;
-    right: 10%;
+    right: 3%;
+    visibility: hidden;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+   
+legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: white;
+}
+input{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(43, 153, 47);
+}
+
+#form{
+    position : absolute;
+    top:10%;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+}
+#form > form{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+}
+#valider{
+    position: absolute;
+    top : 60%;
+    left:10%;
+    width:80%;
+    height:15%;
+    text-align: center;
+    font-size: xx-large;
+	background-color: #3e8e41;
+	font-weight: bold;
+	border: 3px solid white;
+    color:#fff;
+    margin-bottom: 1%;
 }
