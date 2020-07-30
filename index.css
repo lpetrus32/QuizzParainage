@@ -5,10 +5,12 @@ html, body ,header,footer, #main{
 html {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 100%;
+    font-size: 100%;
 }
 
 body {
     overflow: hidden; /* force l'encapsulation du contenu dans le body et cache les barres de défilement*/
+    width: 100%;
     height: inherit;
     background-color: rgb(46, 46, 117);
 }
@@ -19,6 +21,7 @@ header{
     top:0;
     width: 100%;
     height: 10%;
+    padding: 0;
 }
 
 footer{
@@ -28,6 +31,7 @@ footer{
     height: 3%;
     background-color: rgb(156, 156, 156);
     color: rgb(66, 66, 66);
+    font-size: unset
 }
 
 #textHead{
@@ -35,16 +39,20 @@ footer{
     text-align: center;
     font-weight: bolder;
     color: white;
-    vertical-align: middle;
+    font-size: 100%;
+    top: 50%;
 }
 
 #textFoot{
     margin: 0px;
     text-align: center;
     font-style: italic;
+    top: 50%;
 }
 
 .quizzBut {
+    overflow: hidden;
+    padding: 0%;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -54,7 +62,7 @@ footer{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    font-size: xx-large;
+    font-size: 5vw;
 }
   
 .quizzBut:active {
@@ -91,7 +99,8 @@ footer{
 #Q{
     position: absolute;
     top:10%;
-    width:100%;
+    width:90%;
+    left : 5%;
     height: 15%;
     text-align: center;
     color: white;
@@ -127,6 +136,22 @@ footer{
     width: 45.5%;
     position: absolute;
     top : 62.5%;
+    right: 3%;
+    visibility: hidden;
+}
+#B5{    
+    height: 29.5%;
+    width: 45.5%;
+    position: absolute;
+    top : 95%;
+    right: 3%;
+    visibility: hidden;
+}
+#B6{    
+    height: 29.5%;
+    width: 45.5%;
+    position: absolute;
+    top : 95%;
     right: 3%;
     visibility: hidden;
 }
