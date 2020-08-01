@@ -10,7 +10,7 @@
   <body>
     <header>
         <img src="" alt="">
-        <p id="textHead">QUIZZ PARAINAGE</p>
+        QUIZZ PARAINAGE
         <img src="" alt="">
     </header>
     
@@ -36,17 +36,20 @@
       <form>
         <fieldset>
           <legend>Nom Prénom</legend>
-          <input type="text" id="name" name="name" maxlength="100">
+          <input type="text" id="name" name="name" height= "100" maxlength="100">
           <p id="error" style="color: red; font-style: italic;"></p>
         </fieldset>
       </form>
       <button type="button" class="button" id="valider" onclick="next()">Valider</button>
     </div>
 
-    <footer><p id="textFoot">Par l'AMBB pour le master de Bioinformatique de Bordeaux</p></footer>
+    <footer>Par l'AMBB pour le master de Bioinformatique de Bordeaux</footer>
 
     <script src="index.js"></script>
     <script src="textFit.js"></script>
+    <script>
+      textFit(document.getElementsByTagName('header'), {multiLine: true});
+    </script>
   </body>
   
   
