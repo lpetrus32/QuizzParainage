@@ -95,7 +95,9 @@ function next(num){
         document.getElementById("B6").style.visibility="visible";
     }
     page++;
-    textFit(document.getElementsByClassName('quizzBut'), {multiLine: true});
+
+    textFit(document.getElementsByTagName('button'), {multiLine: true});
     textFit(document.getElementById('Q'), {multiLine: true});
+    
 }
 
