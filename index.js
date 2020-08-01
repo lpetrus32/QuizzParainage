@@ -36,7 +36,7 @@ function next(num){
         but2.style.visibility="visible";
     }else if(page == 1){
         answers.push(num);
-        document.getElementById("Q").textContent="";
+        quest.textContent="";
         but1.style.visibility="hidden";
         but2.style.visibility="hidden";
         document.getElementById("form").style.visibility="visible";
@@ -48,7 +48,7 @@ function next(num){
             page--;
         }else{
             answers.push(document.getElementById("name").value);
-            quest.textContent="Eclaire nous un peu, quel est ta situation dans les études supérieures ?";
+            quest.innerHTML=`Eclaire nous un peu, quel est ta situation dans les études supérieures ?`;
             but1.style.height="29.5%";
             but2.style.height="29.5%";
             but1.textContent = "Parcours classique, Bac et licence de Bio";
@@ -95,5 +95,7 @@ function next(num){
         document.getElementById("B6").style.visibility="visible";
     }
     page++;
+    textFit(document.getElementsByClassName('quizzBut'), {multiLine: true});
+    textFit(document.getElementById('Q'), {multiLine: true});
 }
 
