@@ -22,6 +22,9 @@ header{
     width: 100%;
     height: 10%;
     padding: 0;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
 footer{
@@ -31,23 +34,9 @@ footer{
     height: 3%;
     background-color: rgb(156, 156, 156);
     color: rgb(66, 66, 66);
-    font-size: unset
-}
-
-#textHead{
-    margin: 0px;
-    text-align: center;
-    font-weight: bolder;
-    color: white;
-    font-size: 100%;
-    top: 50%;
-}
-
-#textFoot{
-    margin: 0px;
+    font-size: unset;
     text-align: center;
     font-style: italic;
-    top: 50%;
 }
 
 .quizzBut {
@@ -104,7 +93,6 @@ footer{
     text-align: center;
     color: white;
     visibility: hidden;
-    background-color: lawngreen;
 }
 
 #B1{
@@ -166,13 +154,15 @@ legend {
     font-weight: bold;
     font-variant: small-caps;
     color: white;
+    font-size: xx-large;
 }
 input{
     width: 100%;
-    height: 100%;
     text-align: center;
     font-size: x-large;
     color: rgb(43, 153, 47);
+    line-height:140%;
+    font-size: 50px;
 }
 
 #form{
@@ -180,15 +170,15 @@ input{
     top:10%;
     bottom: 3%;
     width: 100%;
+    height: 100%;
     text-align: center;
     visibility: hidden;
 }
 #form > form{
     position: absolute;
     top: 30%;
-    left: 25%;
-    width: 50%;
-    height: 15%;
+    left: 10%;
+    width:80%;
 }
 #valider{
     position: absolute;
