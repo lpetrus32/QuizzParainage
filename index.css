@@ -104,7 +104,7 @@ footer{
     text-align: center;
     color: white;
     visibility: hidden;
-    font-size: auto;
+    background-color: lawngreen;
 }
 
 #B1{
