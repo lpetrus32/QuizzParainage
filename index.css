@@ -62,7 +62,6 @@ footer{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    font-size: 5vw;
 }
   
 .quizzBut:active {
@@ -105,6 +104,7 @@ footer{
     text-align: center;
     color: white;
     visibility: hidden;
+    font-size: auto;
 }
 
 #B1{
