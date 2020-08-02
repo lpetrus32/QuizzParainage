@@ -15,7 +15,7 @@ body {
     background-color: rgb(46, 46, 117);
 }
 
-header{
+#header{
     background-color: rgb(27, 27, 73);
     position: absolute;
     top:0;
@@ -25,6 +25,13 @@ header{
     font-weight: bold;
     color: white;
     text-align: center;
+}
+
+.headpic{
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    top:0%;
 }
 
 footer{
@@ -41,7 +48,7 @@ footer{
 
 .quizzBut {
     overflow: hidden;
-    padding: 0%;
+    padding: 1%;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -162,7 +169,8 @@ input{
     font-size: x-large;
     color: rgb(43, 153, 47);
     line-height:140%;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: bold;
 }
 
 #form{
@@ -193,4 +201,9 @@ input{
 	border: 3px solid white;
     color:#fff;
     margin-bottom: 1%;
+}
+
+.locpic{
+    max-width: 100%;
+    max-height: 100%;
 }
