@@ -8,12 +8,16 @@
   </head>
 
   <body>
-    <header>
-        <img src="" alt="">
-        QUIZZ PARAINAGE
-        <img src="" alt="">
-    </header>
-    
+    <div id="header">
+      <table style="width: 100%;margin: 0;padding: 0;">
+        <tr>
+          <td style="background-color: blue;width: 25%;"><img class="headpic" src="img/logo_uni.jpg" alt="test" style="left: 0;"></td>
+          <td style="background-color: red">QUIZZ PARAINAGE</td>
+          <td style="background-color: green; width: 25%;"><img class="headpic" src="img/logo_ambb.png" alt="test" style="right: 0;"></td>
+        </tr>
+      </table>
+    </div>
+
 
     <div id="page0">
       <p>Bienvenue sur le Quizz de Parainage du Master Bioinformatique de Bordeaux</p><br>
@@ -22,7 +26,7 @@
       <p>PS : Attention, pas de retour en arrière possible ;)</p>
       <p>La bise !</p><br>
       <button type="button" class="button" onclick="next()">Commencer</button>
-    </div>   
+    </div>
 
     <h1 id="Q">Question préliminaire, tu es en ...</h1>
 
@@ -30,8 +34,6 @@
     <button class="quizzBut" id="B2" value="2" onclick="next(2)">Deuxième année <br>M2</button>
     <button class="quizzBut" id="B3" value="3" onclick="next(3)">Je suis en <br>réorientation</button>
     <button class="quizzBut" id="B4" value="4" onclick="next(4)">Je suis en <br>reprise d'études</button>
-    <button class="quizzBut" id="B5" value="5" onclick="next(5)"><img src="" alt="En Outre-Mer"></button>
-    <button class="quizzBut" id="B6" value="6" onclick="next(6)"><img src="" alt="A l'étranger"></button>
     <div id="form">
       <form>
         <fieldset>
@@ -47,9 +49,7 @@
 
     <script src="index.js"></script>
     <script src="textFit.js"></script>
-    <script>
-      textFit(document.getElementsByTagName('header'), {multiLine: true});
-    </script>
+
   </body>
   
   
