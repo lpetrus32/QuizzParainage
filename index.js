@@ -1,27 +1,6 @@
 answers = [];
 page = 0;
 
-function answer1(){
-    answers.push(document.getElementById("B1").value);
-    console.log(answers);
-}
-
-function answer2(){
-    answers.push(document.getElementById("B2").value);
-    console.log(answers);
-    console.log("A");
-}
-
-function answer3(){
-    answers.push(document.getElementById("B3").value);
-    console.log(answers);
-}
-
-function answer4(){
-    answers.push(document.getElementById("B4").value);
-    console.log(answers);
-}
-
 function next(num){
     let but1 = document.getElementById("B1");
     let but2 = document.getElementById("B2");
@@ -61,38 +40,47 @@ function next(num){
         }
     }else if(page == 3){
         answers.push(num);
-        quest.textContent="Attention mise en situation ! Tu as cours à seulement 15h demain, que fais tu de ta soirée ?";
-        but1.textContent = `On rentabilise, GO Tinder !`;
-        but2.textContent = "Netflix & Chill";
-        but3.textContent = "Apéro tranquille sur les quais sans rentrer trop tard";
-        but4.textContent = "Ok alors pré-soirée chez moi, puis on enchaine les bars et on fini en boite !";
-    }else if(page == 4){
-        answers.push(num);
-        quest.textContent = "Et sinon l'informatique ca te parle un peu ?";
+        quest.textContent = "Et sinon l'informatique ca te parle ?";
         but1.style.height = "62%";
         but2.style.height = "62%";
         but1.textContent = "J'en ai déja fait dans mes études ou tout seul";
         but2.textContent = "Alors non pas vraiment c'est surtout la Bio qui m'a attiré";
         but3.style.visibility="hidden";
         but4.style.visibility="hidden";
-    }else if(page == 5){
-        answers.push(num);
-        quest.textContent = "Oulaaaa grosse question là, tu dis plutôt...";
-        but1.textContent = "Pain au chocolat";
-        but2.textContent = "Chocolatine";
-    }else if(page == 6){
+    }else if(page == 4){
         answers.push(num);
         quest.textContent = "Il est où ton ter-ter, ta terre de coeur, celle dont tu rêves la nuit ? ";
         but1.style.height = "29.5%";
         but2.style.height = "29.5%";
-        but1.textContent = "Nord-Est";
-        but2.textContent = "Nord-Ouest";
+        but1.innerHTML = `<img class="locpic" src="img/nordpic.png" alt="Nord">`;
+        but2.innerHTML = `<img class="locpic" src="img/dompic.png" alt="Outre-Mer">`;
         but3.style.visibility="visible";
         but4.style.visibility="visible";
-        but3.textContent = "Sud-Est";
-        but4.textContent = "Sud-Ouest";
-        document.getElementById("B5").style.visibility="visible";
-        document.getElementById("B6").style.visibility="visible";
+        but3.innerHTML = `<img class="locpic" src="img/sudpic.png" alt="Sud">`;
+        but4.innerHTML = `<img class="locpic" src="img/etrangerpic.jpg" alt="A l'étranger">`;
+    }else if(page == 5){
+        answers.push(num);
+        quest.textContent="Toi et le sport c'est comment ?";
+        but4.style.visibility="hidden";
+        but3.style.left="27.25%";
+        but1.textContent = "Je ne peux pas vivre sans (minimum 3 fois/semaine)";
+        but2.textContent = "Je me maintien en forme (environ 1 fois/semaine)";
+        but3.textContent = "Le sport tu dis ? pas intéressé";
+    }else if(page == 6){
+        answers.push(num);
+        quest.textContent="Mise en situation : Tu as cours à seulement 15h demain, que fais-tu de ta soirée ?";
+        but1.textContent = "Netflix & Chill";
+        but2.textContent = "Apéro tranquille sur les quais";
+        but3.textContent = "Pré-soirée chez moi, puis on enchaine les bars et on fini en boite !";
+    }else if(page == 7){
+        answers.push(num);
+        but1.style.height = "62%";
+        but2.style.height = "62%";
+        but3.style.visibility="hidden";
+        but4.style.visibility="hidden";
+        quest.textContent = "Attention grosse question là, tu dis plutôt...";
+        but1.textContent = "Pain au chocolat";
+        but2.textContent = "Chocolatine";
     }
     page++;
 
